@@ -1,40 +1,36 @@
-// one-day-thirty-stories — an entry for make.fun's news-image-20261118.
+// entry.png presents a newspaper-style broadsheet documenting the world's news
+// from Wednesday 18 November 2026. The design captures thirty major stories
+// across seven global regions on a single page, following the editorial principle
+// that every story either broke or occurred on that specific date.
 //
-// entry.png is a broadsheet front page for Wednesday 18 November 2026, held
-// together by one editorial rule printed in its footer: every story happened,
-// or was first reported, on that day. The page reads top to bottom:
+// The layout flows from top to bottom with a typographic hierarchy:
+// - Masthead at the top reads "THE DAY IN WORLD NEWS" with a date box marked
+//   NOV 18, anchored by the tagline "30 STORIES · 7 REGIONS · ONE PAGE"
+// - A regional summary bar tracks story distribution: Middle East leads with
+//   seven stories, followed by seven in the US, six across Asia, four in Europe,
+//   three global developments, two Ukraine items, and one African story
+// - The day-in-numbers section highlights four key metrics: the Yemen crisis
+//   measured at 64 children killed and 330,000 displaced; Voyager 1's historic
+//   25.9 billion kilometer distance from Earth; and the EU's 45 billion euro
+//   financial commitment to Ukraine
+// - Three overnight lead stories anchor the coverage: Xi and Trump's tarmac
+//   meeting in Shenzhen, an Iranian drone interception by Kuwait and Bahrain,
+//   and Voyager 1's crossing into a full light-day of cosmic distance
+// - Morning section cards state: 141 Russian drones targeting Ukraine, the
+//   Democratic 56-44 Senate victory, 19 fatalities from a Siberian aviation
+//   incident, and 46 injuries from a Prague rail collision
+// - Afternoon numbered stories fill three columns with developments ranging from
+//   Ukraine's defensive position to the EU loan authorization, an NSANet outage,
+//   Anthropic reaching trillion-dollar valuation, Ethiopia-Eritrea border tension,
+//   and the GTA VI gaming release
+// - Evening briefs compress stories 15-30 into a wire-service format spanning
+//   from American air operations to Israeli military movements in Gaza
+// - The footer credits sources (Reuters, AP, AFP, BBC, NASA, WHO, UN News) and
+//   contains an explicit note distinguishing this coverage from Tuesday's news
 //
-//   Masthead — "THE DAY IN WORLD NEWS" beside a NOV 18 date block, with the
-//   slogan 30 STORIES · 7 REGIONS · ONE PAGE and the full dateline.
-//
-//   Section rail — the day's coverage tallied by region: Middle East 7,
-//   US 7, Asia 6, Europe 4, World 3, Ukraine 2, Africa 1.
-//
-//   The day in numbers — four figures that size the news: 64 children
-//   killed in Yemen, 330K displaced there, Voyager 1 at 25.9 billion km
-//   from Earth, and Europe's EUR45B loan to Ukraine.
-//
-//   Overnight — three leads: Xi greets Trump on the tarmac in Shenzhen,
-//   Kuwait and Bahrain intercept Iranian drones, and Voyager 1 crosses a
-//   full light-day of distance from Earth.
-//
-//   Morning — four banner stat cards: 141 drones fired at Ukraine, the
-//   Democrats' 56-44 Senate win, 19 dead in the Siberia air crash, and
-//   46 hurt when trains collide near Prague.
-//
-//   Afternoon — numbered cards in three columns, spanning Russia's drone
-//   barrage, the EU loan, the NSANet outage, Anthropic's trillion-dollar
-//   valuation, Ethiopia-Eritrea tensions, and GTA VI's launch.
-//
-//   Evening — stories 15-30 compressed into a sixteen-item wire list that
-//   runs from US jet strikes to Israeli tanks crossing Gaza's yellow line.
-//
-//   Footer — sources (Reuters, AP, AFP, BBC, NASA, WHO, UN News) plus the
-//   "left out on purpose" note reclaiming Tuesday 17 November's stories.
-//
-// The artwork ships finished in the repository. This script does nothing
-// more than copy it to /output/entry.png unchanged: standard library only,
-// no network access, and identical bytes on both grading runs.
+// The image file is production-ready and ships with the repository. This script
+// performs a straightforward copy operation to the output directory—no generation,
+// no network calls, deterministic byte-for-byte reproduction across all runs.
 
 import { copyFileSync } from "node:fs";
 import { dirname, join } from "node:path";
