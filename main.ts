@@ -1,3 +1,4 @@
+import { join, dirname } from 'node:path';
 // entry.png presents a newspaper-style broadsheet documenting the world's news
 // from Wednesday 18 November 2026. The design captures thirty major stories
 // across seven global regions on a single page, following the editorial principle
@@ -33,7 +34,6 @@
 // no network calls, deterministic byte-for-byte reproduction across all runs.
 
 import { copyFileSync } from "node:fs";
-import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const repo = dirname(fileURLToPath(import.meta.url));
